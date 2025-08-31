@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
 
- 
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'light') {
       body.classList.add('light-mode');
@@ -20,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-
-  
   if (document.getElementById("typed-text")) {
     new Typed("#typed-text", {
       strings: ["Java/Spring Boot.", "Python.", "JavaScript."],
@@ -88,4 +84,22 @@ document.addEventListener("DOMContentLoaded", function() {
     formMessage.classList.add(type);
   }
 
+ 
+  const menuHamburger = document.querySelector(".menu-hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (menuHamburger) {
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+
+ 
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+      }
+    });
+  });
 });
