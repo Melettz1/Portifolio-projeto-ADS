@@ -637,7 +637,7 @@ footer {
   margin-top: 3rem;
 }
 
-
+/* parte responsiva do mobile */
 
 .menu-hamburger {
   display: none;
@@ -660,7 +660,6 @@ body.light-mode .menu-hamburger {
   }
 
   .nav-links {
-   
     position: fixed;
     top: 0;
     right: 0;
@@ -670,7 +669,7 @@ body.light-mode .menu-hamburger {
     background: var(--nav-bg-color-dark);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -680,7 +679,7 @@ body.light-mode .menu-hamburger {
   }
 
   .nav-links.active {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
   
   body.light-mode .nav-links {
@@ -691,9 +690,8 @@ body.light-mode .menu-hamburger {
     display: block;
   }
 
-  
   .nav-right .nav-links {
-      order: 1; 
+      order: 1;
   }
 }
 
@@ -713,5 +711,10 @@ body.light-mode .menu-hamburger {
   .timeline-item .timeline-icon,
   .timeline-item:nth-child(even) .timeline-icon {
     left: 0;
+  }
+
+  .hero-content h3 #typed-text::before {
+    content: '\A';
+    white-space: pre;
   }
 }
