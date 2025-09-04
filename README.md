@@ -3,7 +3,7 @@
 Projeto desenvolvido para a faculdade de **Análise e Desenvolvimento de Sistemas (ADS)**.  
 Objetivo: apresentar meus trabalhos, habilidades e informações de contato.
 
-https://melettz1.github.io/Portifolio-projeto-ADS/
+https://portifolio-projeto-ads.vercel.app/
 
 ## Tecnologias
 - HTML5  
